@@ -6,7 +6,7 @@
 
 - **Automatic test selection**: Based on normality and homogeneity of variance, automatically chooses t-test/ANOVA, Welch's test, or non-parametric tests (Mann‑Whitney U / Kruskal‑Wallis).
 - **Multiple post‑hoc tests**: Supports SNK, LSD, Tukey, Dunnett, Dunn, Nemenyi, Steel, Games‑Howell, and Dunnett's T3.
-- **Basic bar charts**: Bar charts with significance markers (*, **, ***, ns), exportable as PNG (500 DPI) and vector PDF.
+- **Bar charts**: Bar charts with significance markers (*, **, ***, ns), exportable as PNG (500 DPI) and vector PDF.
 - **Bilingual interface**: Switch between Chinese and English on the fly.
 - **Portable & self‑contained**: No installation of R or Python required – just unzip and run.
 
@@ -15,7 +15,7 @@
 1. Download and extract `DiffExplorer.zip`.
 2. Double‑click `DiffExplorer.exe` to launch.
 3. Import your data (supports `.xlsx` / `.csv` / `.txt`).
-4. Configure parameters and click "Run Analysis".
+4. Click "Run Analysis". (Default test pre-selected, changeable.)
 5. View result tables and charts; export with one click.
 
 ## System Requirements
@@ -38,6 +38,10 @@ Password: `kyk2`
 - R 4.6.1 (statistical computation)
 - PyInstaller (packaging)
 
+## Feedback
+
+Report bugs or suggest features via Issues.
+
 ---
 
 # DiffExplorer - 差异探索分析工具
@@ -48,7 +52,7 @@ Password: `kyk2`
 
 - **自动分流检验**：根据数据正态性和方差齐性，自动选择 t/ANOVA、Welch 或非参数检验（MW/KW）。
 - **多事后检验**：支持 SNK、LSD、Tukey、Dunnett、Dunn、Nemenyi、Steel、Games‑Howell、Dunnett's T3。
-- **简易柱状图**：柱状图带显著性星号(*, **, ***, ns)，支持 PNG（500 DPI）和 PDF 矢量图导出。
+- **差异柱状图**：柱状图带显著性星号(*, **, ***, ns)，支持 PNG（500 DPI）和 PDF 矢量图导出。
 - **中英文切换**：界面支持中英文，适合国内外用户。
 - **绿色免安装**：解压即用，无需安装 R 或 Python。
 
@@ -57,7 +61,7 @@ Password: `kyk2`
 1. 下载并解压 `DiffExplorer.zip`。
 2. 双击 `DiffExplorer.exe` 启动。
 3. 导入数据（支持 .xlsx / .csv / .txt）。
-4. 设置参数后点击“运行分析”。
+4. 点击“运行分析”。(默认方法，可调整）
 5. 查看结果表格和图表，一键导出。
 
 ## 系统要求
@@ -80,3 +84,7 @@ https://github.com/JkingYu/DiffExplorer/releases
 - Python 3.12（UI 与绘图）
 - R 4.6.1（统计计算）
 - PyInstaller（打包）
+
+## 反馈
+
+欢迎通过 Issues 提交 bug 报告或建议。
