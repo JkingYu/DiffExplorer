@@ -13,10 +13,13 @@
 ## Quick Start
 
 1. Download and extract `DiffExplorer.zip`.
-2. Double‑click `DiffExplorer.exe` to launch.
-3. Import your data (supports `.xlsx` / `.csv` / `.txt`).
-4. Configure parameters and click "Run Analysis".
-5. View result tables and charts; export with one click.
+2. Shared via Baidu Cloud: DiffExplorer.zip
+    Link: https://pan.baidu.com/s/1IE-oQQ_rIkfZse4bd20Fow?pwd=kyk2
+    Password: kyk2
+3. Double‑click `DiffExplorer.exe` to launch.
+4. Import your data (supports `.xlsx` / `.csv` / `.txt`).
+5. Configure parameters and click "Run Analysis".
+6. View result tables and charts; export with one click.
 
 ## System Requirements
 
@@ -51,10 +54,13 @@ The full package (including the R engine) is available via cloud storage:
 ## 快速开始
 
 1. 下载并解压 `DiffExplorer.zip`。
-2. 双击 `DiffExplorer.exe` 启动。
-3. 导入数据（支持 .xlsx / .csv / .txt）。
-4. 设置参数后点击“运行分析”。
-5. 查看结果表格和图表，一键导出。
+2. 通过网盘分享的文件：DiffExplorer.zip
+    链接: https://pan.baidu.com/s/1IE-oQQ_rIkfZse4bd20Fow?pwd=kyk2 
+    提取码: kyk2
+3. 双击 `DiffExplorer.exe` 启动。
+4. 导入数据（支持 .xlsx / .csv / .txt）。
+5. 设置参数后点击“运行分析”。
+6. 查看结果表格和图表，一键导出。
 
 ## 系统要求
 
