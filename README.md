@@ -6,7 +6,7 @@
 
 - **Automatic test selection**: Based on normality and homogeneity of variance, automatically chooses t-test/ANOVA, Welch's test, or non-parametric tests (Mann‑Whitney U / Kruskal‑Wallis).
 - **Multiple post‑hoc tests**: Supports SNK, LSD, Tukey, Dunnett, Dunn, Nemenyi, Steel, Games‑Howell, and Dunnett's T3.
-- **Publication‑ready charts**: Bar charts with significance markers (*, **, ***, ns), exportable as PNG (500 DPI) and vector PDF.
+- **Basic bar charts**: Bar charts with significance markers (*, **, ***, ns), exportable as PNG (500 DPI) and vector PDF.
 - **Bilingual interface**: Switch between Chinese and English on the fly.
 - **Portable & self‑contained**: No installation of R or Python required – just unzip and run.
 
@@ -47,7 +47,7 @@ The full package (including the R engine) is available via cloud storage:
 
 - **自动分流检验**：根据数据正态性和方差齐性，自动选择 t/ANOVA、Welch 或非参数检验（MW/KW）。
 - **多事后检验**：支持 SNK、LSD、Tukey、Dunnett、Dunn、Nemenyi、Steel、Games‑Howell、Dunnett's T3。
-- **出版级图表**：柱状图带显著性星号(*, **, ***, ns)，支持 PNG（500 DPI）和 PDF 矢量图导出。
+- **简易柱状图**：柱状图带显著性星号(*, **, ***, ns)，支持 PNG（500 DPI）和 PDF 矢量图导出。
 - **中英文切换**：界面支持中英文，适合国内外用户。
 - **绿色免安装**：解压即用，无需安装 R 或 Python。
 
