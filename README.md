@@ -47,7 +47,7 @@ The full package (including the R engine) is available via cloud storage:
 
 - **自动分流检验**：根据数据正态性和方差齐性，自动选择 t/ANOVA、Welch 或非参数检验（MW/KW）。
 - **多事后检验**：支持 SNK、LSD、Tukey、Dunnett、Dunn、Nemenyi、Steel、Games‑Howell、Dunnett's T3。
-- **出版级图表**：柱状图带显著性星号（*、**、***、ns），支持 PNG（500 DPI）和 PDF 矢量图导出。
+- **出版级图表**：柱状图带显著性星号(*, **, ***, ns)，支持 PNG（500 DPI）和 PDF 矢量图导出。
 - **中英文切换**：界面支持中英文，适合国内外用户。
 - **绿色免安装**：解压即用，无需安装 R 或 Python。
 
