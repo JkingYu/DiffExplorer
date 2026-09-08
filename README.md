@@ -25,10 +25,12 @@
 
 ## Download
 
-The full package (including the R engine) is available via cloud storage:  
-Shared via Baidu Cloud: DiffExplorer.zip
-    Link: https://pan.baidu.com/s/1IE-oQQ_rIkfZse4bd20Fow?pwd=kyk2
-    Password: kyk2
+**Option 1 (Recommended): Download from GitHub Releases**  
+https://github.com/JkingYu/DiffExplorer/releases
+
+**Option 2: Baidu Cloud (for users in China)**  
+Link: https://pan.baidu.com/s/1IE-oQQ_rIkfZse4bd20Fow?pwd=kyk2  
+Password: `kyk2`
 
 ## Tech Stack
 
@@ -65,10 +67,13 @@ Shared via Baidu Cloud: DiffExplorer.zip
 
 ## 下载
 
-完整版（含 R 引擎）请从网盘下载：  
-通过网盘分享的文件：DiffExplorer.zip
-    链接: https://pan.baidu.com/s/1IE-oQQ_rIkfZse4bd20Fow?pwd=kyk2 
-    提取码: kyk2
+**方式一（推荐）：从 GitHub Releases 下载**  
+https://github.com/JkingYu/DiffExplorer/releases
+
+**方式二：百度网盘（国内用户加速）**  
+通过网盘分享的文件：DiffExplorer.zip  
+链接: https://pan.baidu.com/s/1IE-oQQ_rIkfZse4bd20Fow?pwd=kyk2  
+提取码: `kyk2`
 
 ## 技术栈
 
