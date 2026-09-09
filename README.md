@@ -1,6 +1,6 @@
 # DiffExplorer - Differential Analysis Tool
 
-**DiffExplorer** is a lightweight statistical differential analysis tool designed for biomedical researchers. It enables data import, statistical testing, chart generation, and result export with zero coding.
+**DiffExplorer** is a lightweight statistical differential analysis tool for biomedical researchers with zero coding background. It enables data import, statistical testing, and chart generation — with results ready right before your lab meeting. Just unzip and run!
 
 ## Features
 
@@ -46,7 +46,7 @@ Report bugs or suggest features via Issues.
 
 # DiffExplorer - 差异探索分析工具
 
-**DiffExplorer** 是一个专为生物医学研究者设计的轻量级统计差异分析工具，无需编程即可完成数据导入、统计检验、图表生成和结果导出。
+**DiffExplorer** 是一款专为零代码基础的生物医学研究者设计的轻量级统计差异分析工具。支持数据导入、统计检验和图表生成，助你在组会前快速获得分析结果。解压即用！
 
 ## 功能特点
 
