@@ -46,6 +46,10 @@ Password: `kyk2`
 - R 4.6.1 (statistical computation)
 - PyInstaller (packaging)
 
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
 ## Feedback
 
 Report bugs or suggest features via Issues.
@@ -100,6 +104,10 @@ https://github.com/JkingYu/DiffExplorer/releases
 - Python 3.12（UI 与绘图）
 - R 4.6.1（统计计算）
 - PyInstaller（打包）
+
+## 许可证
+
+本项目采用 MIT 许可证，详见 [LICENSE](LICENSE) 文件。
 
 ## 反馈
 
