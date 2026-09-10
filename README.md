@@ -9,7 +9,7 @@
 - **Bar charts**: Bar charts with significance markers (*, **, ***, ns), exportable as PNG (500 DPI) and vector PDF.
 - **Bilingual interface**: Switch between Chinese and English on the fly.
 - **Portable & self‑contained**: No installation of R or Python required – just unzip and run.
-- **Runs locally · Data privacy**: Your data never leaves your computer – no cloud upload, no privacy concerns.
+- **Runs locally & Data privacy**: Your data never leaves your computer – no cloud upload, no privacy concerns.
 - **Fully open-source**: The complete statistical R code is open-source, transparent, and reproducible.
 
 ## Quick Start
@@ -57,7 +57,7 @@ Report bugs or suggest features via Issues.
 - **差异柱状图**：柱状图带显著性星号(*, **, ***, ns)，支持 PNG（500 DPI）和 PDF 矢量图导出。
 - **中英文切换**：界面支持中英文，适合国内外用户。
 - **绿色免安装**：解压即用，无需安装 R 或 Python。
-- **本地运行·数据安全**：数据无需上传云端，数据隐私安全。
+- **本地运行·数据安全**：数据无需上传云端，隐私安全。
 - **全代码开源**：R 统计代码完全开源，透明可复现。
 
 ## 快速开始
