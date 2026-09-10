@@ -10,7 +10,13 @@
 - **Bilingual interface**: Switch between Chinese and English on the fly.
 - **Portable & self‑contained**: No installation of R or Python required – just unzip and run.
 - **Runs locally & Data privacy**: Your data never leaves your computer – no cloud upload, no privacy concerns.
-- **Fully open-source**: The complete statistical R code is open-source, transparent, and reproducible.
+- **Transparent statistics**: Full decision trail (normality, variance, final test) exported in the result, with open-source R code.
+
+## Statistical Transparency
+
+- **Decision trail**: For every indicator, Shapiro-Wilk normality and Levene's homogeneity tests are performed. Results are saved in the `Normality` and `Levene` sheets.
+- **Final test recorded**: The `Results` sheet explicitly states the chosen test (e.g., Student's t, Welch t, Mann-Whitney U, ANOVA, SNK, Dunn+BH) in the `Test` column.
+- **Fully reproducible**: The complete R code is open-source, so every P value can be audited and reproduced independently.
 
 ## Quick Start
 
@@ -58,7 +64,13 @@ Report bugs or suggest features via Issues.
 - **中英文切换**：界面支持中英文，适合国内外用户。
 - **绿色免安装**：解压即用，无需安装 R 或 Python。
 - **本地运行·数据安全**：数据无需上传云端，隐私安全。
-- **全代码开源**：R 统计代码完全开源，透明可复现。
+- **统计流程透明**：结果完整记录决策痕迹（正态性、方差齐性、最终检验），R 代码开源可审计。
+
+## 统计流程透明度
+
+- **决策痕迹**：对每个指标均执行 Shapiro-Wilk 正态性检验和 Levene 方差齐性检验，结果分别保存在 `Normality` 和 `Levene` 工作表中。
+- **最终检验记录**：`Results` 工作表的 `Test` 列明确写出所用检验（如 Student's t、Welch t、Mann-Whitney U、ANOVA、SNK、Dunn+BH）。
+- **完全可复现**：R 统计代码完全开源，每个 P 值均可独立审计和复现。
 
 ## 快速开始
 
