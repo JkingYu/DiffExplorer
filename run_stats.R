@@ -39,14 +39,11 @@ all_pairs <- function(groups) {
   combn(groups, 2, simplify = FALSE)
 }
 
-get_pairs <- function(groups, test_name, control, specified_pairs) {
+get_pairs <- function(groups, test_name, control) {
   if (test_name %in% c("Dunnett", "Steel", "Dunnett_T3")) {
     if (is.na(control) || !(control %in% groups)) return(list())
     others <- setdiff(groups, control)
     return(lapply(others, function(g) c(control, g)))
-  } else if (test_name == "LSD" && length(specified_pairs) > 0) {
-    valid <- sapply(specified_pairs, function(p) all(p %in% groups))
-    return(specified_pairs[valid])
   } else {
     return(all_pairs(groups))
   }
@@ -133,7 +130,6 @@ main <- function(data_path = NULL, params_path = NULL, output_path = NULL) {
   nonparam_posthoc <- params$nonparam_posthoc %||% "Dunn"
   adjust <- params$adjust %||% "BH"
   control <- params$control %||% NA
-  specified_pairs <- params$specified_pairs %||% list()
   force_welch <- params$force_welch %||% FALSE
   adjust_lower <- tolower(adjust)
   
@@ -234,13 +230,13 @@ main <- function(data_path = NULL, params_path = NULL, output_path = NULL) {
     
     # 获取配对列表（根据最终路径）
     if (use_kw) {
-      pairs <- get_pairs(groups_valid, nonparam_posthoc, control, specified_pairs)
+      pairs <- get_pairs(groups_valid, nonparam_posthoc, control)
       if (length(pairs) == 0) pairs <- all_pairs(groups_valid)
     } else if (use_welch) {
-      pairs <- get_pairs(groups_valid, welch_posthoc, control, specified_pairs)
+      pairs <- get_pairs(groups_valid, welch_posthoc, control)
       if (length(pairs) == 0) pairs <- all_pairs(groups_valid)
     } else {
-      pairs <- get_pairs(groups_valid, param_posthoc, control, specified_pairs)
+      pairs <- get_pairs(groups_valid, param_posthoc, control)
       if (length(pairs) == 0) pairs <- all_pairs(groups_valid)
     }
     
@@ -396,7 +392,8 @@ main <- function(data_path = NULL, params_path = NULL, output_path = NULL) {
       
       if (overall_p < 0.05) {
         if (param_posthoc == "LSD") {
-          lsd <- LSD.test(aov_res, "Group", p.adj = adjust, group = FALSE)
+          adjust_lsd <- if (tolower(adjust) == "bh") "BH" else tolower(adjust)
+          lsd <- LSD.test(aov_res, "Group", p.adj = adjust_lsd, group = FALSE)
           comps <- lsd$comparison
           pair_map <- list()
           if (nrow(comps) > 0) {
