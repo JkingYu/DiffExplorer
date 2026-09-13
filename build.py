@@ -7,7 +7,10 @@ base_dir = os.path.dirname(os.path.abspath(__file__))
 # 构造打包参数
 args = [
     '--onedir',
+    '--noconsole',
     '--name', 'DiffExplorer',
+    '--icon', 'favicon.ico',
+    '--add-data', 'favicon.ico;.',
     '--add-data', f'{os.path.join(base_dir, "R-Portable")}{os.pathsep}R-Portable',
     '--add-data', f'{os.path.join(base_dir, "run_stats.R")}{os.pathsep}.',
     '--hidden-import', 'PIL',
