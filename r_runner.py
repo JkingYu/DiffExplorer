@@ -22,7 +22,6 @@ def run_r_analysis(data_path, output_dir="temp", params=None):
             "nonparam_posthoc": "Dunn",
             "adjust": "BH",
             "control": "A",
-            "specified_pairs": [],
             "force_welch": False
         }
     os.makedirs(output_dir, exist_ok=True)
@@ -39,23 +38,13 @@ def run_r_analysis(data_path, output_dir="temp", params=None):
     rscript_path = find_rscript()
     output_path = os.path.join(output_dir, "Routput.xlsx")
     cmd = [rscript_path, r_script, data_path, params_path, output_path]
+    creationflags = subprocess.CREATE_NO_WINDOW if sys.platform == 'win32' else 0
 
     result = subprocess.run(cmd, capture_output=True, text=True, timeout=300,
-                            encoding='utf-8', errors='ignore')
+                            encoding='utf-8', errors='ignore', creationflags=creationflags)
     if result.returncode != 0:
         print("STDERR:", result.stderr)
         raise RuntimeError("R execution failed")
     if not os.path.exists(output_path):
         raise FileNotFoundError(f"R output not generated at {output_path}")
     return output_path
-
-if __name__ == "__main__":
-    test_data = "temp/input_R_data.xlsx"
-    if not os.path.exists(test_data):
-        print("Please run data_loader.py first")
-    else:
-        try:
-            out = run_r_analysis(test_data)
-            print("Success:", out)
-        except Exception as e:
-            print("Error:", e)
