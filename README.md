@@ -34,11 +34,11 @@
 ## Download
 
 **Option 1 (Recommended): Download from GitHub Releases**  
-https://github.com/JkingYu/DiffExplorer/releases
+https://github.com/JkingYu/DiffExplorer/releases/latest
 
 **Option 2: Baidu Cloud (for users in China)**  
-Link: https://pan.baidu.com/s/1IE-oQQ_rIkfZse4bd20Fow?pwd=kyk2  
-Password: `kyk2`
+Link: https://pan.baidu.com/s/1HAoq9lspC7cQrr0P231j5Q?pwd=jkyu  
+Password: `jkyu`
 
 ## Tech Stack
 
@@ -81,7 +81,7 @@ Report bugs or suggest features via Issues.
 1. 下载并解压 `DiffExplorer.zip`。
 2. 双击 `DiffExplorer.exe` 启动。
 3. 导入数据（支持 .xlsx / .csv / .txt）。
-4. 点击“运行分析”。(默认方法，可调整）
+4. 点击“运行分析”。(默认方法已预先，可调整）
 5. 查看结果表格和图表，一键导出。
 
 ## 系统要求
@@ -92,12 +92,12 @@ Report bugs or suggest features via Issues.
 ## 下载
 
 **方式一（推荐）：从 GitHub Releases 下载**  
-https://github.com/JkingYu/DiffExplorer/releases
+https://github.com/JkingYu/DiffExplorer/releases/latest
 
 **方式二：百度网盘（国内用户加速）**  
 通过网盘分享的文件：DiffExplorer.zip  
-链接: https://pan.baidu.com/s/1IE-oQQ_rIkfZse4bd20Fow?pwd=kyk2  
-提取码: `kyk2`
+链接: https://pan.baidu.com/s/1HAoq9lspC7cQrr0P231j5Q?pwd=jkyu  
+提取码: `jkyu`
 
 ## 技术栈
 
