@@ -4,7 +4,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 import matplotlib.backends.backend_pdf
 
-BLUE_COLORS = ['#345699','#3F66B4','#4874CB','#90A3D8','#BBC4E5','#C1C9E7']
+BLUE_COLORS = ['#56679F', '#6B7DB5', '#8294C9', '#A0AED8', '#BFC8E8', '#DCE1F4']
 
 def get_colors(n):
     colors = BLUE_COLORS
@@ -28,11 +28,13 @@ def plot_indicator(ind, long_data, res, scheme, outdir, group_order):
     width_inch = 96.52 / 25.4
     height_inch = 101.6 / 25.4
     fig, ax = plt.subplots(figsize=(width_inch, height_inch))
+    ax.set_facecolor('none')
     ax.bar(x, means, yerr=stds, capsize=3, width=0.4,
            color=get_colors(len(groups)), edgecolor='none')
     ax.set_xticks(x)
-    ax.set_xticklabels(groups, fontname='Times New Roman', fontsize=9)
-    ax.set_ylabel('Value', fontname='Times New Roman', fontsize=10)
+    ax.set_xticklabels(groups, fontname='Times New Roman', fontsize=10)
+    ax.set_ylabel('Value', fontname='Times New Roman', fontsize=8)
+    ax.tick_params(axis='y', labelsize=6)
     ax.set_title(ind, fontname='Times New Roman', fontsize=11, weight='bold')
 
     post = res[(res['Indicator'] == ind) & (res['Comparison'] != 'Overall')]
@@ -68,7 +70,8 @@ def plot_indicator(ind, long_data, res, scheme, outdir, group_order):
                         stars = '*'
                     else:
                         stars = 'ns'
-                    ax.text((i1+i2)/2, y*1.002, stars, ha='center', va='bottom',
+                    offset = ymax * 0.002 if stars == 'ns' else 0
+                    ax.text((i1 + i2) / 2, y + offset, stars, ha='center', va='bottom',
                             fontsize=8, fontname='Times New Roman')
     ax.spines[['top','right']].set_visible(False)
     os.makedirs(outdir, exist_ok=True)
