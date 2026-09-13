@@ -55,8 +55,3 @@ def smart_load(file_path, output_dir="temp"):
     out_path = os.path.join(output_dir, 'input_R_data.xlsx')
     out.to_excel(out_path, index=False, header=False, engine='openpyxl')
     return out_path
-
-if __name__ == "__main__":
-    test = r"E:\Zaa_宏基因-mapping\DiffExplorer_Project\try1.xlsx"
-    if os.path.exists(test):
-        print(smart_load(test))
