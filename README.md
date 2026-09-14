@@ -81,7 +81,7 @@ Report bugs or suggest features via Issues.
 1. 下载并解压 `DiffExplorer.zip`。
 2. 双击 `DiffExplorer.exe` 启动。
 3. 导入数据（支持 .xlsx / .csv / .txt）。
-4. 点击“运行分析”。(默认方法已预先，可调整）
+4. 点击“运行分析”。(默认方法已预选，可调整）
 5. 查看结果表格和图表，一键导出。
 
 ## 系统要求
